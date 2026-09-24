@@ -1,0 +1,100 @@
+<!doctype html>
+<!--added a dark mode -->
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <!--added my portriat pic-->
+    <style>
+      .my-pic {
+        width: 80px;
+        height: 80px;
+        margin: 1px 40px 135px 400px;
+      }
+    </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Using Bootstrap 5 framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery used to load the navbar -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar gets added here -->
+    <div id="nav-placeholder"></div>
+    <!-- Web page content goes inside Bootstrap container(s) -->
+
+    <div class="container" style="margin: auto;">
+      <h1>Projects</h1>
+      <!--adding card to my name-->
+      <div class="card bg-secondary text-black"><h3>School Related:</h3></div>
+      <div class="card bg-light text-black"> 
+        <p> 
+          <h4 style=" margin:auto;">Manufacturing </h4>
+          <p style="margin: auto; ">Wooden table 
+          </p>
+          <ul> 
+        <li>
+        Requirements: Build a piece of furniture from one flat piece of 4x4 of wood. It also needed to have no screws, only fitting by sliding pieces into one another. Final requirement was to add our schools logo somewhere on the table.</li>
+          <img 
+          src="images/wooden_table.png" 
+          class="img margin:auto;" 
+          alt="wooden table" 
+          width="auto" 
+          height="auto"/>
+       <p style="margin: auto; "> Wooden Box </p>
+       <li>Requirments: Build a wooden box that allows each side to fit together without screws. Also allow one side of the boxto slide in and out.</li>
+        </ul>
+      </p>
+    </div>
+     <div class="card bg-secondary text-black"><h3>Achievements</h3></div>
+      <div class="card bg-light text-black"><p> <ul> <li>National Society of Collegiate Scholars</li> <li>National Society of Leadership and Success</li> <li>Solidworks certification: CSWA-AM</li> <li> Rebuilding a mini bike from a frame</li> </ul> </p>
+      </div> 
+      <div> 
+        <!-- LinkedIn Profile link -->
+        <a href="https://www.linkedin.com/in/dylan-kidd-73b3b7331/?isSelfProfile=true" target="_blank" alt="my linkedIn profile">LinkedIn Profile</a> 
+      </div>
+      <!--added pics of societys-->
+      <img
+        src="images/NSCS_Logo.png"
+          class="img-fluid"
+          alt="national society of collegiate scholars logo"
+          width="100"
+          height="100"
+        />
+        <img
+          src="images/NSLSLogo.png"
+          class="img-fluid"
+          alt="national society of leadership and success logo"
+          width="100"
+          height="100"
+        />
+      
+      <p>
+        This is my first web page using version control with Git and GitHub.
+      </p>
+      <!--added MSU Logo to the webpage-->
+
+      <img
+        src="images/msu_logo.jpg"
+        class="img-fluid"
+        alt="MSU Logo"
+        width="200"
+        height="200"
+      />
+    </div>
+
+    <script>
+      // Load only the #dark-site-nav element from nav_dark_mode.html
+      $("#nav-placeholder").load("nav_dark_mode.html #dark-site-nav");
+    </script>
+  </body>
+</html>
