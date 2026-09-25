@@ -2,12 +2,28 @@
 <!--added a dark mode -->
 <html lang="en" data-bs-theme="dark">
   <head>
-    <!--added my portriat pic-->
+    <!--Allows text to be beside my portrait-->
     <style>
-      .my-pic {
-        width: 80px;
-        height: 80px;
-        margin: 1px 40px 135px 400px;
+      .horizontal-card {
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .card-image-wrapper {
+        flex: 10 100px 100px;
+        width: 130px;
+        height: 397px;
+        overflow: hidden;
+      }
+      .card-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card-content {
+        flex: 1;
+        padding: 20px;
       }
     </style>
     <title>Bootstrap Example</title>
@@ -35,23 +51,31 @@
     <div class="container" style="margin: auto;">
       <h1>Home</h1>
       <!--adding card to my name and about info-->
-      <div class="card bg-secondary text-black" style="margin:auto;"><h3>Dylan Mateo Kidd</h3></div>
-      <div class="card bg-dark text-white"  style="margin:auto;"><p> <ul> <li>
+     
+      
+        
+          <div class="horizontal-card">
+        <div class="card-image-wrapper">
+          <img src="images/Portriat_pic.jpg" alt="MEEEEEE">
+        </div>
+<div class="card-content">
+ <div class="card bg-secondary text-black" style="margin: 10px 1px 1px 1px;">
+        <h3>Dylan Mateo Kidd</h3></div>
+ <h2 style="margin: 1px 1px 1px 1px;">Education</h2>
+ <ul> <li>
         Degree: Advanced Manufacturing Sciences.</li> 
        <li> Concentration: Mechanical
         Engineering Technician</li> </ul>
-      </p></div>
-    <div class="my-pic">
-        <img
-          src="images/Portriat_pic.jpg"
-          class="img-fluid"
-          alt="MEEE!!!"
-          width="100"
-          height="100"
-        />
+      </p>
+       <h3>About Me</h3>
+       <p style="margin: 1px 1px 73px 1px;"> I am a student at Metropilitain State University of Denver, going on my 3rd year of schooling. I enjoy outdoor pursuits, working on my new minibike, and learning new skills.
+        </div>
       </div>
-        <div class="card bg-secondary text-black"><h3>Achievements</h3></div>
-      <div class="card bg-light text-black"><p> <ul> <li>National Society of Collegiate Scholars</li> <li>National Society of Leadership and Success</li> <li>Solidworks certification: CSWA-AM</li> <li> Rebuilding a mini bike from a frame</li> </ul> </p>
+
+        
+      </div>
+        <div class="card bg-secondary text-black" style=" margin: 10px 1px 1px 1px;"><h3>Achievements</h3></div>
+      <div class="card bg-dark text-white"><p> <ul> <li>National Society of Collegiate Scholars</li> <li>National Society of Leadership and Success</li> <li>Solidworks certification: CSWA-AM</li> <li> Rebuilding a mini bike from a frame</li> </ul> </p>
       </div> 
       <div> 
         <!-- LinkedIn Profile link -->
