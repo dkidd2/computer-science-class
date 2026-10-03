@@ -4,7 +4,8 @@
     <!--Allows text to be beside my portrait-->
     <!--added a nice contrast on the page for accessibility-->
     <style>
-    
+     .imageflex { display:flex;}
+       .imageflexcontent{ color: white; margin-right:50px; margin-top:-510px;}
       .horizontal-card {
         display: flex;
         align-items: center;
@@ -54,12 +55,10 @@
     <div id="nav-placeholder"></div>
     <!-- Web page content goes inside Bootstrap container(s) -->
 
+     
     <div class="container" style="margin: auto;">
       <h1>Home</h1>
-      <!--adding card to my name and about info-->
-     
-      
-        
+      <!--adding card to my name and about info-->  
           <div class="horizontal-card">
         <div class="card-image-wrapper">
           <img src="images/Portriat_pic.jpg" alt="MEEEEEE">
@@ -77,8 +76,6 @@
        <p style="margin: 1px 1px 73px 1px;"> I am a student at Metropilitain State University of Denver. I am going on my 3rd year of schooling. I enjoy outdoor pursuits, working on my new minibike, and learning new skills.
         </div>
       </div>
-
-        
       </div>
       <div class="margin: auto;">
          <!--moved words in place-->
@@ -89,17 +86,19 @@
         </div>
 <div class="card-content" >
    <div class="card bg-dark text-white"> 
-    <h3 style="margin: 1px 100px 1px 1px;">Achievements</h3>
-    
+    <h3 style="margin: 1px 100px 1px 1px;">Achievements</h3> 
     </div>
-    <ul> <li>National Society of Collegiate Scholars</li> <li>National Society of Leadership and Success</li> <li>Solidworks certification: CSWA-AM</li> <li style="margin: 1px 1px 280px 1px;"> Rebuilding a mini bike from a frame</li> </ul>
+    <!--list of my achievements-->
+    <ul> 
+      <li>National Society of Collegiate Scholars</li> 
+      <li>National Society of Leadership and Success</li> 
+      <li>Solidworks certification: CSWA-AM</li> 
+      <li style="margin: 1px 1px 280px 1px;"> Rebuilding a mini bike from a frame</li> 
+    </ul>
   </div>
       </div>
      <!--moving images to achivements-->
       <div style="margin: -150px 1px 1px 250px;"> 
-        <!-- LinkedIn Profile link -->
-        <a href="https://www.linkedin.com/in/dylan-kidd-73b3b7331/?isSelfProfile=true" target="_blank" alt="my linkedIn profile">LinkedIn Profile</a> 
-      
       <!--added pics of societys-->
       <img
         src="images/NSCS_Logo.png"
@@ -116,9 +115,9 @@
           height="100"
         />
       
+      </div>
     </div>
-    </div>
-
+       
     <script>
       // Load only the #site-nav element from navbar.html
       $("#nav-placeholder").load("navbar.html #site-nav");
